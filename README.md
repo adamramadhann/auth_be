@@ -225,7 +225,7 @@ datasource db {
 
 // Model User = Tabel users di database
 model User {
-  id       Int    @id @default(autoincrement())  // Primary key, auto increment
+  id       Sring    @id @default(uuid())  // Primary key, auto increment
   name     String @unique                         // Username, harus unik
   password String                                 // Password (akan di-hash)
 }
